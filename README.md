@@ -5,20 +5,20 @@ Boilerplate to create npm package.
 ## Installation
 
 ```sh
-npx @jabraf/create-npm-package
+npx @jabraf/create-npm-package --name <my_project>
 ```
 
-An interactive prompt will guide you through with a few simple questions about the project.
+Then
 
-> Disclaimer: Parts of this setup are inspired from [Matt Pocock's work](https://www.totaltypescript.com)
+```sh
+cd my_project
+npm install
+```
 
-## Notes
+<small>Disclaimer: Parts of this setup are inspired from [Matt Pocock's work](https://www.totaltypescript.com)</small>
 
-In order to work, it needs:
 
-- `NPM_TOKEN` secret set in GitHub repository
-- manual version bump i.e. `npm version {major|minor|patch}`
-
-> The PRs with will create a pre-release version in npm automatically.
+## Roadmap
+- add [changeset](https://github.com/changesets/changesets)
 
 &copy; 2025 - Jabran Rafique

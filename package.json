@@ -16,6 +16,10 @@
     "name": "Jabran Rafique",
     "email": "hello@jabran.me"
   },
+  "publishConfig": {
+    "access": "public"
+  },
+  "private": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jabranr/create-npm-package.git"

@@ -3,9 +3,12 @@
   "description": "A simple template for creating an NPM package",
   "version": "1.0.10001",
   "bin": {
-    "@jabraf/cnp": "bin/index.sh",
     "@jabraf/create-npm-package": "bin/index.sh"
   },
+  "files": [
+    "bin/",
+    "template/"
+  ],
   "homepage": "https://www.github.com/jabranr/create-npm-package",
   "keywords": [
     "create-npm-package",

@@ -1,7 +1,7 @@
 {
   "name": "@jabraf/create-npm-package",
   "description": "A simple template for creating an NPM package",
-  "version": "1.0.10002",
+  "version": "1.0.10003",
   "bin": {
     "@jabraf/create-npm-package": "bin/index.sh"
   },

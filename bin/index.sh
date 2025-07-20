@@ -46,7 +46,11 @@ mkdir -p "$TARGET_DIR"
 echo "Created target directory: $TARGET_DIR"
 
 # copy template files (including hidden files)
-cp -r "$PACKAGE_DIR/template/." "$TARGET_DIR/"
+if [[ "$PACKAGE_DIR" == *"/node_modules"* ]]; then
+  cp -r "$PACKAGE_DIR/@jabraf/create-npm-package/template/." "$TARGET_DIR/"
+else
+  cp -r "$PACKAGE_DIR/template/." "$TARGET_DIR/"
+fi
 
 echo "Ready to use at $TARGET_DIR"
 echo "Run \"cd $TARGET_DIR && npm install\" to get started"
